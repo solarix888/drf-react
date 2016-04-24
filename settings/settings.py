@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+SECRET_KEY = '123'  # This should be encrypted and secret in production
 
 DEBUG = os.environ.get('DEBUG', 'on') == 'on'
 
